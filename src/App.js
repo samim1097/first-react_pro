@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from'react';
 import './App.css';
-
-function App() {
+import Person from './Person'
+  class App extends Component{
+  state = {
+    person: [
+      { name: 'max', age: '24'  },
+      { name: 'samim', age: '28' },
+      { name: 'rana', age: '26' }
+          ]
+  }
+ render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Person/>
+      <Person name ={this.state.person[0].name} age= {this.state.person[0].age}/>
+      <Person name ={this.state.person[1].name} age= {this.state.person[1].age}/>
+      <Person name ={this.state.person[2].name} age= {this.state.person[2].age}/>
+      <button>click me </button>
     </div>
   );
-}
-
+  }
+  } 
 export default App;
