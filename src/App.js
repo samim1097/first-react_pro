@@ -16,6 +16,8 @@ import Person from './Person'
       <Person name ={this.state.person[0].name} age= {this.state.person[0].age}/>
       <Person name ={this.state.person[1].name} age= {this.state.person[1].age}/>
       <Person name ={this.state.person[2].name} age= {this.state.person[2].age}/>
+      <Person name ={this.state.person[2].name} age= {this.state.person[2].age}/>
+      
       <button>click me </button>
     </div>
   );
